@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header & Nav Kısımları */
+
+header{
+    background-color: #183D3D;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.logo{
+    width: 5%;
+    height: 80px;
+    float: left;
+}
+
+.firmaadi{
+    width: 14%;
+    height: 70px;
+    float: left;
+    background-color: #5C8374;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+nav{
+    width: 63%;
+    height: 55px;
+    background-color: #5C8374;
+    color: white;
+    font-size: 25px;
+    float: left;
+    padding-left: 253px;
+    padding-top: 25px;
+}
+
+/* Article Kısmı */
+
+article{
+    height: 675px;
+    background-color: #B9B4C7;
+    color: #183D3D;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Hakkımızda Sayfası İçin */
+
+#baslik{
+    width: 500px;
+    height: 100px;
+    margin-left: 500px;
+    padding-top: 75px;
+}
+
+.pg{
+    width: 500px;
+    height: 300px;
+    text-align: justify;
+    font-size: 25px;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#pg-sol{
+    float: left;
+    margin-left: 200px;
+}
+
+#pg-sag{
+    float: right;
+    margin-right: 200px;
+}
+
+/* Menüler İçin */
+
+.navbar a{
+    position: relative;
+    font-size: 25px;
+    color: #FFF;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #183D3D;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FFF;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+    background: #183D3D;
+}
+
+/* Ürünler Sayfası İçin */
+
+.urunler{
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.resim-yazisi{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    background-color: black;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.urunler:hover .resim-yazisi{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
